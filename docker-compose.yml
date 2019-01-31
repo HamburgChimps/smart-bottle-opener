@@ -1,0 +1,31 @@
+version: '3'
+services:
+  broker:
+    image: eclipse-mosquitto
+    networks:
+      - beer
+    ports:
+      - "1883:1883"
+      # - "9001:9001"
+  server:
+    image: mhart/alpine-node:8.15.0
+    networks:
+      - beer
+    ports:
+      - "5000:5000"
+  frontend:
+    image: mhart/alpine-node:8.15.0
+    networks:
+      - beer
+    ports:
+      - "80:80"
+  auth:
+    image: mhart/alpine-node:8.15.0
+    networks:
+      - beer
+    ports:
+      - "3000:3000"
+
+networks:
+  beer:
+    external: false
