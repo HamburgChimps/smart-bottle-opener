@@ -5,7 +5,7 @@ IoT. Made by [@jacobtheevans](https://github.com/jacobtheevans) and
 
 ### Todo for project
 - [x] Init Commit
-- [ ] Design document for the overall architecture of project
+- [x] Design document for the overall architecture of project
 - [ ] Design document for the physical bottle opener device
 - [ ] NodeJS master server for client management and storage
 - [ ] MQTT Client for bottle opener
@@ -21,3 +21,6 @@ IoT. Made by [@jacobtheevans](https://github.com/jacobtheevans) and
 https://learn.cybus.io/lessons/mqtt-basics/
 https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/
 https://github.com/espressif/arduino-esp32
+
+### Architecture
+![Architecture of project](./assets/arch.svg)
